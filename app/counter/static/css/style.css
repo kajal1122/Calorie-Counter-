@@ -1,0 +1,34 @@
+body
+{
+  background-image: url('churros1.jpg');
+
+}
+ h1  {
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+}
+.logo
+{
+  margin-top: 50px;
+}
+.subheading
+{
+  color: white;
+  margin-left: 130px;
+  font-family: cursive;
+
+}
+.myList
+{
+  color: white;
+}
+.userInput
+{
+  font-size: 26px;
+}
+.btn
+{
+  background-color: black;
+  color: white;
+}

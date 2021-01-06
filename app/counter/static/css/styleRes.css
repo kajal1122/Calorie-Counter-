@@ -1,0 +1,16 @@
+body
+{
+  background-image: url('salad.jpg');
+}
+
+.result
+{
+  margin-top: 50px;
+
+  width: 50%;
+
+}
+.btn
+{
+  background-color: blue;
+}

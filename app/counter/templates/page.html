@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/styleRes.css' %}">
+  </head>
+  <body>
+    <div class="container jumbotron result">
+    <p>Food Report :</p>
+    {% for p in post %}
+
+        <h2> Food Item:  {{p.Food}} </h2>
+        <h2> Carbohydrate count of {{p.Food}} <small>in grams</small> = {{p.Carbohydrates}} </h2>
+        <h2> Calorie count of {{p.Food}} = {{p.Calories}} </h2>
+
+    {% endfor %}
+
+
+    <form action="/app" method="get">
+         <input class='btn' type="submit" value="Back">
+    </form>
+    </div>
+
+  </body>
+</html>

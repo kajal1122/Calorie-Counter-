@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <div class='container logo'>
+      <h1> Calorie Counter </h1>
+      <p class='subheading'>- know calorie count of your favourite food items.</p><br>
+
+    <label class='myList' for="food">Choose Food Item from list:</label><br><br>
+     <form action="app/myFun" method="get" class="userInput">
+         {% csrf_token %}
+          <select name="food" id="food">
+           <option value="Waffles">Waffles</option>
+           <option value="Pretzels">Pretzels</option>
+           <option value="Popcorn">Popcorn</option>
+           <option value="Pizza">Pizza</option>
+
+            <option value="Rice, brown (1 cup)">Rice, brown (1 cup)</option>
+            <option value="Rice, white (1 cup)">Rice, white (1 cup)</option>
+            <option value="Pancake">Pancake</option>
+            <option value="Noodles (spaghetti)">Noodles (spaghetti)</option>
+            <option value="Cornbread">Cornbread</option>
+            <option value="Cookie (oatmeal raisin)">Cookie (oatmeal raisin)</option>
+            <option value="Cereal">Cereal</option>
+            <option value="Bread (whole wheat)">Bread (whole wheat)</option>
+            <option value="Bread (white)">Bread (white)</option>
+            <option value="Breadsticks (2 sticks)">Breadsticks (2 sticks)</option>
+            <option value="Biscuit (1)">Biscuit (1)</option>
+            <option value="Bagel (1)">Bagel (1)</option>
+            <option value="Sweet Potato">Sweet Potato</option>
+            <option value="Potato (1 large, baked, plain)">Potato (1 large, baked, plain)</option>
+
+            <option value="Watermelon (1)">Watermelon (1)</option>
+            <option value="Strawberries (1 cup)">Strawberries (1 cup)</option>
+            <option value="Orange Juice (1 cup)">Orange Juice (1 cup)</option>
+            <option value="Grape Juice (1 cup)">Grape Juice (1 cup)</option>
+            <option value="Dates (dried)(10)">Dates (dried)(10)</option>
+
+
+            <option value="Banana (1)">Banana (1)</option>
+            <option value="Apple (1 medium)">Apple (1 medium)</option>
+            <option value="Apple juice (1 cup)">Apple juice (1 cup)</option>
+            <option value="Black eye peas (1/2 cup)">Black eye peas (1/2 cup)</option>
+            <option value="Yogurt">Yogurt</option>
+            <option value="Skim milk (1 cup)">Skim milk (1 cup)</option>
+
+            <option value="Pudding (any flavor)">Pudding (any flavor)</option>
+            <option value="Chocolate milk (1 cup)">Chocolate milk (1 cup)</option>
+
+
+
+
+
+
+
+
+          </select>
+          <input class='btn' type="submit" value="Select">
+      </form>
+</div>
+  </body>
+</html>
